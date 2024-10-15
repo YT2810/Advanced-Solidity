@@ -26,7 +26,9 @@ Prysm: A Go-based consensus client for Ethereum’s Proof of Stake (used post-me
 ### These clients allow participants to:
 
 Sync with the blockchain: Download and verify the blockchain’s history.
+
 Validate transactions: Ensure that transactions are legitimate and comply with the rules.
+
 Participate in consensus: Contribute to the decision-making process on which blocks are added to the blockchain.
 
 ## **Why is Client Diversity Important?**
@@ -51,7 +53,8 @@ the network. Multiple clients ensure that power is distributed.
 ### Avoids Chain Splits:
 
 A bug in one client might cause that client to diverge from the correct chain. If too many nodes use
-that client, it could result in a chain split—a situation where the network has two versions of the truth, creating confusion and potential loss of funds. Having various clients mitigates this risk.
+that client, it could result in a chain split—a situation where the network has two versions of the truth, 
+creating confusion and potential loss of funds. Having various clients mitigates this risk.
 
 ### Encourages Innovation:
 
@@ -69,3 +72,62 @@ The risk of a chain split is minimized.
 By using multiple clients, Ethereum ensures a more resilient, secure, and decentralized network.
 This diversity is based on the principle that different software implementations reduce the risks 
 of centralization and security vulnerabilities.
+
+-------------------------------------------------------------
+
+### **Where is the full Ethereum state held?**
+
+#### **What is the Ethereum state?**
+
+In Ethereum, the "state" refers to the current status of all **accounts** (including balances),
+**smart contracts**, and their **storage**. The state is a mapping of addresses to account data, including:
+
+- The **nonce** (transaction count) of each account.
+- The **balance** (amount of Ether) in each account.
+- The **storage** (data associated with smart contracts).
+- The **code** (for contracts, stored and executed in the Ethereum Virtual Machine).
+
+Ethereum's state changes with every new block added to the blockchain.
+
+#### **Where is this state held?**
+
+The full Ethereum state is **stored locally** on **full nodes** across the network. A **full node** is a computer 
+running Ethereum client software that downloads the entire blockchain and maintains the current state. 
+The state is not stored directly on-chain (in the blocks themselves), but rather it’s held in the 
+form of a **Merkle Patricia Trie**, a data structure designed to efficiently store and verify Ethereum's state.
+
+- **Merkle Patricia Trie**: It’s a type of tree structure used to store Ethereum’s world state 
+efficiently. Every change in the state, such as a transaction, results in a change in the trie.
+
+Full nodes **store the entire state** so that they can:
+- **Validate transactions and blocks**.
+- **Execute smart contracts**.
+- **Answer queries** from light nodes or other participants on the network.
+
+#### **Different Types of Ethereum Nodes**
+
+- **Full nodes**: These nodes store the entire blockchain and the full current state.
+They download every block and verify every transaction.
+- **Light nodes**: Light nodes do not store the full blockchain or the full state. 
+Instead, they store the block headers and rely on full nodes to provide transaction and state data when needed.
+
+#### **How is the State Updated?**
+
+Every time a transaction is executed, Ethereum's state changes. Full nodes calculate these state changes by:
+1. **Processing transactions** within a block.
+2. **Executing the code** of smart contracts.
+3. **Updating the state trie** with new values, including balances, storage, and other data.
+
+These updates are confirmed and accepted across the network through **consensus**.
+
+#### **Summary**
+
+- The full Ethereum state is stored on **full nodes**.
+- **Full nodes** maintain the state by downloading and verifying the entire blockchain.
+- The state is organized in a **Merkle Patricia Trie** for efficient storage and verification.
+- The state includes **account balances**, **smart contract storage**, and **code**.
+
+#### **Sources**
+
+- [Ethereum.org - Ethereum State](https://ethereum.org/en/developers/docs/evm/)
+- Information from slides and class content provided in bootcamp
