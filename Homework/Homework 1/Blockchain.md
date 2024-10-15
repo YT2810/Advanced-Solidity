@@ -1,4 +1,4 @@
-# **Why is client diversity important for Ethereum?**
+# **Q1. Why is client diversity important for Ethereum?**
 
 ## **What is an Ethereum client?**
 
@@ -75,9 +75,9 @@ of centralization and security vulnerabilities.
 
 -------------------------------------------------------------
 
-### **Where is the full Ethereum state held?**
+# **Q2. Where is the full Ethereum state held?**
 
-#### **What is the Ethereum state?**
+## **What is the Ethereum state?**
 
 In Ethereum, the "state" refers to the current status of all **accounts** (including balances),
 **smart contracts**, and their **storage**. The state is a mapping of addresses to account data, including:
@@ -131,3 +131,87 @@ These updates are confirmed and accepted across the network through **consensus*
 
 - [Ethereum.org - Ethereum State](https://ethereum.org/en/developers/docs/evm/)
 - Information from slides and class content provided in bootcamp
+
+
+------------------------------------------------------------------------------------
+
+# **Q3. What is a Replay Attack?**
+
+A **replay attack** occurs when an attacker intercepts a valid transaction from one blockchain network
+and **reuses** (or "replays") it on another network or at another time, effectively tricking the system 
+into thinking the transaction is new. This type of attack can happen when the same account, smart contract, or transaction data is used across different chains without any special protections in place.
+
+## **How Does a Replay Attack Happen?**
+
+Imagine you send 1 Ether from **Account A** to **Account B** on the Ethereum network. 
+A replay attack occurs when someone captures this transaction and **replays** it on another 
+chain (for example, a fork of Ethereum), causing 1 Ether to be sent again from **Account A** 
+to **Account B**—even though you didn’t intend for the second transaction to happen. 
+
+This can happen because the transaction signature is still valid, and without protection, 
+it can be reused maliciously.
+
+#### **Example of a Replay Attack**
+
+A famous example of replay attacks occurred during the **Ethereum Classic (ETC) and 
+Ethereum (ETH)** split after the DAO hack in 2016. Both Ethereum and Ethereum Classic
+used the same transaction structure after the split. Transactions made on one 
+chain (e.g., Ethereum) could be **replayed** on the other chain (Ethereum Classic) 
+because they still had the same format and were considered valid on both blockchains. 
+
+Attackers exploited this and caused users' funds to be unintentionally transferred between chains.
+This is why replay protection became a key consideration in blockchain forks.
+
+#### **What Causes Replay Attacks?**
+
+1. **Forks in Blockchains**: When a blockchain is forked, the new chain starts with the 
+same data (including account balances and transactions) as the original chain. 
+If protections are not put in place, transactions on the original chain can be replayed 
+on the new one.
+   
+2. **Identical Transactions Across Chains**: Replay attacks can occur if the same account 
+structure, transaction format, or smart contract is used on different chains without 
+differentiation.
+
+#### **What Prevents a Replay Attack?**
+
+Two key pieces of information can prevent replay attacks:
+
+1. **Chain ID**:
+   - The **Chain ID** is a unique identifier for each blockchain. When a transaction is signed, 
+   it includes the Chain ID of the network it's meant for. If someone tries to replay the 
+   transaction on another chain, the transaction will fail because the Chain ID won’t match. 
+   For example, Ethereum and Ethereum Classic have different Chain IDs, so a transaction meant 
+   for one chain can’t be replayed on the other.
+   
+2. **Nonce**:
+   - A **nonce** is a number that represents how many transactions an account has made. 
+   Every time an account sends a transaction, the nonce increases by one. If someone tries 
+   to replay a transaction, it will have an **old nonce** that no longer matches the account’s 
+   current nonce, so the transaction will be rejected as invalid. Nonces help ensure that each 
+   transaction can only happen once.
+
+#### **Why Are Replay Attacks Dangerous?**
+Replay attacks are dangerous because they can cause unintended transfers of assets, 
+potentially leading to the loss of funds. If a blockchain split happens and users aren't careful, 
+attackers can drain accounts by replaying old transactions across chains. 
+
+#### **Preventing Replay Attacks**
+To prevent replay attacks:
+- **Use Chain IDs**: Most modern blockchains include a unique Chain ID to differentiate 
+transactions across networks.
+- **Smart Transaction Management**: Nonces and time limits ensure transactions can’t be 
+used again or at an unintended time.
+
+#### **Summary**
+
+- A **replay attack** happens when an attacker **reuses a valid transaction** on a different 
+network or at another time.
+- **Chain IDs** and **nonces** are the two main pieces of information that help prevent replay attacks.
+- Replay attacks have historically caused problems, especially after blockchain forks like the 
+Ethereum-Ethereum Classic split.
+
+#### **Sources**
+
+- [Ethereum.org - Security Concepts](https://ethereum.org/en/developers/docs/security/)
+- [Ethereum StackExchange - Replay Attack on Forked Chains](https://ethereum.stackexchange.com/questions/25578/what-is-a-replay-attack-and-how-can-it-be-prevented)
