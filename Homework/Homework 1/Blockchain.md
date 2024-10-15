@@ -215,3 +215,73 @@ Ethereum-Ethereum Classic split.
 
 - [Ethereum.org - Security Concepts](https://ethereum.org/en/developers/docs/security/)
 - [Ethereum StackExchange - Replay Attack on Forked Chains](https://ethereum.stackexchange.com/questions/25578/what-is-a-replay-attack-and-how-can-it-be-prevented)
+
+
+-------------------------------------------------------------------------------------------------
+
+# **Q4. In a contract, how do we know who called a view function?**
+
+## **What is a View Function?**
+
+A **view function** in Solidity is a special type of function that does not alter the 
+blockchain's state. This means it **cannot modify** data or send transactions that would 
+require gas. Instead, it’s used to **read data** from the blockchain. 
+
+Examples of common use cases for view functions include:
+
+- Checking **balances** of accounts.
+- Fetching information from a **smart contract**.
+
+Since a view function doesn’t make any changes to the state, calling it is **free**—you don’t 
+have to pay gas fees.
+
+#### **How Do We Know Who Called a View Function?**
+
+To identify **who** (which address) called a view function in a contract, we use **msg.sender**. 
+
+- **msg.sender**: This is a built-in global variable in Solidity. It represents
+the **address** of the account that called the function, whether it's a regular 
+user or another smart contract. 
+
+Even though view functions do not modify the state, they can still access **msg.sender** 
+to determine the address of the caller.
+
+#### **Example:**
+
+```solidity
+pragma solidity ^0.8.0;
+
+contract Example {
+    function getCaller() public view returns (address) {
+        return msg.sender; // This will return the address that called this view function
+    }
+}
+```
+
+In this example, the **getCaller** function is a view function. When it’s called, 
+it returns the address of the caller using **msg.sender**.
+
+#### **Important Details:**
+- **msg.sender** will always refer to the address that directly interacts with the function. 
+If the function was called by another contract, **msg.sender** would be the address of that contract.
+  
+- Although **view functions** don’t modify the blockchain, they can still interact with 
+other **state variables** or access information like **msg.sender**.
+
+#### **Why Is This Important?**
+
+Knowing who called a view function can be useful in cases where you need to 
+show **personalized information** or when you want to **log who made the call**. 
+Even though the function doesn’t change the blockchain’s state, it still gives insight 
+into the user interacting with the contract.
+
+#### **Summary**
+
+- A **view function** reads data but does not change the state of the blockchain.
+- To know **who** called the view function, we use **msg.sender**, which provides 
+the address of the caller.
+  
+#### **Sources**
+
+- [Solidity Documentation - Functions](https://docs.soliditylang.org/en/v0.8.7/contracts.html#functions)
+- [Ethereum.org - Solidity Basics](https://ethereum.org/en/developers/docs/solidity/) 
