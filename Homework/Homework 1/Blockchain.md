@@ -285,3 +285,26 @@ the address of the caller.
 
 - [Solidity Documentation - Functions](https://docs.soliditylang.org/en/v0.8.7/contracts.html#functions)
 - [Ethereum.org - Solidity Basics](https://ethereum.org/en/developers/docs/solidity/) 
+
+
+----------------------------------------------------------------------------------------------
+
+# **Q1. Why is client diversity important for Ethereum?**  
+
+Client diversity is essential to prevent single points of failure, enhance security, 
+and promote decentralization by ensuring that no single client controls the majority of the network.
+
+# **Q2. Where is the full Ethereum state held?**  
+
+The full Ethereum state is stored locally on full nodes in a Merkle Patricia Trie structure, 
+which keeps track of all account balances, smart contract storage, and state transitions.
+
+# **Q3. What is a replay attack? Which 2 pieces of information can prevent it?** 
+
+A replay attack occurs when a valid transaction is maliciously reused on a different chain, 
+and it can be prevented using the Chain ID and transaction nonce to ensure uniqueness.
+
+# **Q4. In a contract, how do we know who called a view function?**  
+
+In a contract, the address of the caller of a view function is identified using the global 
+variable `msg.sender`, which stores the caller's address.
