@@ -1,3 +1,11 @@
+# **Q4. Write some Yul to**
+
+Add 0x07 to 0x08
+store the result at the next free memory location.
+**(optional) write this again in opcodes**
+
+
+
 assembly {
     // PUSH values 0x07 and 0x08 onto the stack
     PUSH1 0x07

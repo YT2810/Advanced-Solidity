@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "y",
+						"type": "uint256"
+					}
+				],
+				"name": "subtract",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Homework/Homework 5/Assembly_3.sol": "SubOverflow"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Homework/Homework 5/Assembly_3.sol": {
+			"keccak256": "0xec1ead8ea1ca67cc071c1d7b1ae42f533204d5efa4e8ccce0750d0e94515888d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://74f922f5d082938b36192071ddfae0c5733a0a46240e1e0ab99cefb4a1d8e324",
+				"dweb:/ipfs/QmUxFJuk33fskRidk2HLUuwagZuFB5sD5w3dc6FU1R5Aiu"
+			]
+		}
+	},
+	"version": 1
+}

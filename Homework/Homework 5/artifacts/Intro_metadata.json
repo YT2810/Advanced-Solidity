@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "intro",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Homework/Homework 5/Assembly_1.sol": "Intro"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Homework/Homework 5/Assembly_1.sol": {
+			"keccak256": "0xe5b48459307f18c95695cc9427bab7024b4819f2268c02085816a35cbe3d69bf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f4bf4723ff8fa7907c086f50f4b82016106d0aea0893465376fdcd0b61ba77f9",
+				"dweb:/ipfs/QmNNnn9LEupZwXvq4B9cvEg3JEjwzHjnnhmrtaTRKbHkKg"
+			]
+		}
+	},
+	"version": 1
+}

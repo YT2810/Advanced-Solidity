@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "count",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "increment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Homework/Homework 5/Assembly_4.sol": "Scope"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Homework/Homework 5/Assembly_4.sol": {
+			"keccak256": "0xcb9da2c17ab29ba9fbdb80efcdb656f9d7e25382cd59f67337aa6184b6ede726",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4cfe212e8b5b72ec90ab51a6d2485f433a18de4df8070e0918f4707627492876",
+				"dweb:/ipfs/QmVL66PL6sz1BtCoVXZi8XdRt9ZYYJUeDNvzJTqi4kShDc"
+			]
+		}
+	},
+	"version": 1
+}
