@@ -12,12 +12,18 @@ a client to participate in the consensus mechanism and validate blocks.
 **Here are some of the most popular Ethereum clients:**
 
 Geth (Go-Ethereum): Written in Go, it's one of the most widely used clients.
+
 Besu: A Java-based client mainly used in enterprise environments.
+
 Nethermind: A .NET-based client known for its performance and reliability.
+
 Erigon: A client focused on reducing resource usage, particularly storage.
+
 Lighthouse: A consensus client, written in Rust, designed for Ethereum’s Proof of Stake.
+
 Prysm: A Go-based consensus client for Ethereum’s Proof of Stake (used post-merge).
-These clients allow participants to:
+
+###These clients allow participants to:
 
 Sync with the blockchain: Download and verify the blockchain’s history.
 Validate transactions: Ensure that transactions are legitimate and comply with the rules.
