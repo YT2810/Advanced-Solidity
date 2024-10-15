@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "shouldRevert",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "read",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "result",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Homework/Homework 5/DeployRevert.sol": "DeployRevert"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Homework/Homework 5/DeployRevert.sol": {
+			"keccak256": "0x21e7fdb02d07f2ee2feed8038a500b1fee8987bfe6e1a22e6340d686e026ae29",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aa2189c88ab3b16a4fa1848745e78e5d93df0ae4f23caa38f92b8c44021658b5",
+				"dweb:/ipfs/Qmbf8iULFvMxsjhQCCVYGaGXenqLVxcf6Wmab1FKKqZ3sq"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "addAndStore",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "result",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Homework/Homework 5/AssemblySum.sol": "AssemblySum"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Homework/Homework 5/AssemblySum.sol": {
+			"keccak256": "0x2a836e1a933c3f5f8d5b4842e27d9f74785458f02f357b390e6a129634c75f83",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d8a6eb034349063e76f72f19de51d47151112780801db32e3c745b759d4d2dbe",
+				"dweb:/ipfs/QmaeE7PvzRRPdnfspsJyaeTTLbFxd7kysB1HKeEp2eom5L"
+			]
+		}
+	},
+	"version": 1
+}

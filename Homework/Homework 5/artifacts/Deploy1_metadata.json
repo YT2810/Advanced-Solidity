@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "read",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "result",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Homework/Homework 5/Deploy1.sol": "Deploy1"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Homework/Homework 5/Deploy1.sol": {
+			"keccak256": "0x491d110bd7c28ef300158d563532464411b605ac33b75439ac7b02f6d21d1ef6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8e31e9356a8ba109931fe81824e927e197604d3d5695da0807d99f5672957e37",
+				"dweb:/ipfs/QmTWHRwevnFQ2WVwkfvorRtQcoy3ad1QNMjRUuCvcRFJVY"
+			]
+		}
+	},
+	"version": 1
+}
