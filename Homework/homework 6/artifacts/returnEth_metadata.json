@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "count",
+				"name": "getEth",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -15,20 +15,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "num",
-						"type": "uint256"
-					}
-				],
-				"name": "increment",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -45,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Homework/Homework 5/Assembly_4.sol": "Scope"
+			"Homework/homework 6/returnEth.sol": "returnEth"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -59,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Homework/Homework 5/Assembly_4.sol": {
-			"keccak256": "0xcb9da2c17ab29ba9fbdb80efcdb656f9d7e25382cd59f67337aa6184b6ede726",
+		"Homework/homework 6/returnEth.sol": {
+			"keccak256": "0xa273a9cb7291b60d07bf763e86446dbbaf73e1fa20c25541a16c3584886b19d1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4cfe212e8b5b72ec90ab51a6d2485f433a18de4df8070e0918f4707627492876",
-				"dweb:/ipfs/QmVL66PL6sz1BtCoVXZi8XdRt9ZYYJUeDNvzJTqi4kShDc"
+				"bzz-raw://f027550dda394f6c69d974778b7c45debdf2a6de22c08798e6dd6c2612f87673",
+				"dweb:/ipfs/QmQVonYB775HTeJ4KkFWV1VrhCsaYShCcMNhD5b9H8Fm9X"
 			]
 		}
 	},
