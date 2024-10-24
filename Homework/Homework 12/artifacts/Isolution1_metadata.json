@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[2][3]",
+						"name": "",
+						"type": "uint256[2][3]"
+					},
+					{
+						"internalType": "uint256[2][3]",
+						"name": "",
+						"type": "uint256[2][3]"
+					}
+				],
+				"name": "solution",
+				"outputs": [
+					{
+						"internalType": "uint256[2][3]",
+						"name": "",
+						"type": "uint256[2][3]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Homework/Homework 12/level1.sol": "Isolution1"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Homework/Homework 12/level1.sol": {
+			"keccak256": "0x3c1b76107c434b5d3d90128247629f50504453d7328b648a3908c9eacf5b1187",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c950cb64229a3f1d49286847a962cdd96347a7301efec0e70c192709c1b01d18",
+				"dweb:/ipfs/QmYnMXyHfdQmZZaLRSCv66a1vKM9W1oxoF5wW3UFrfDicY"
+			]
+		}
+	},
+	"version": 1
+}

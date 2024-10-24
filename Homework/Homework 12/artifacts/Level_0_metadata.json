@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "solution",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Homework/Homework 12/level0.sol": "Level_0"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Homework/Homework 12/level0.sol": {
+			"keccak256": "0xb01a312c02919734ee54e576931c3e74c18874461a54799a0dc3d002bc84405e",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://c5dd2555ec62281b4ea9e3f497874cd5d2a565f917948980d66fec633e57d920",
+				"dweb:/ipfs/QmWhhmR9EFRnJr2oqpW86KFweSYPSwM4cC4iT9joPkhccV"
+			]
+		}
+	},
+	"version": 1
+}
