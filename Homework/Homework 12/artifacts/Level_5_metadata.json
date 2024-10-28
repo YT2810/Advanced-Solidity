@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "a",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "b",
+						"type": "int256"
+					}
+				],
+				"name": "solution",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Homework/Homework 12/level5v1.sol": "Level_5"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Homework/Homework 12/level5v1.sol": {
+			"keccak256": "0x2f5252befa48f044c4212581dddcd067febf705726c70d39237a0f98a17d629a",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://d811319a889a95152b0b4d345791c8aea5ad43aa1c73f35180e604da898d8df8",
+				"dweb:/ipfs/QmR4UTpSZAEWsSgrFnafZ24Pviy8Aj16J4tD9kvyin4rzV"
+			]
+		}
+	},
+	"version": 1
+}
