@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "packed",
+						"type": "bytes"
+					}
+				],
+				"name": "solution",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "a",
+						"type": "uint16"
+					},
+					{
+						"internalType": "bool",
+						"name": "b",
+						"type": "bool"
+					},
+					{
+						"internalType": "bytes6",
+						"name": "c",
+						"type": "bytes6"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Homework/Homework 12/level3v4.sol": "Level_3"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Homework/Homework 12/level3v4.sol": {
+			"keccak256": "0x93a175b7590b143e9d3ce014bc07acc4d9bc1a16ea0e4bc9e84aa7b83cc815b3",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://33350f69c8ab43fc95871103606bf26e31046506e83bd5cbd1c24d6bb6beea7a",
+				"dweb:/ipfs/QmRUu2nZcraQDUfCszomos7vRiTtPg3JzSUpnBxYpW8MRg"
+			]
+		}
+	},
+	"version": 1
+}
