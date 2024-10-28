@@ -6,13 +6,24 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "uint256[2][3]",
+						"name": "x",
+						"type": "uint256[2][3]"
+					},
+					{
+						"internalType": "uint256[2][3]",
+						"name": "y",
+						"type": "uint256[2][3]"
+					}
+				],
 				"name": "solution",
 				"outputs": [
 					{
-						"internalType": "uint8",
+						"internalType": "uint256[2][3]",
 						"name": "",
-						"type": "uint8"
+						"type": "uint256[2][3]"
 					}
 				],
 				"stateMutability": "pure",
@@ -32,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Homework/Homework 12/level0v2.sol": "Level_0"
+			"Homework/Homework 12/level1v3.sol": "Level_1"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -46,12 +57,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Homework/Homework 12/level0v2.sol": {
-			"keccak256": "0x7c8c2b2d20b5d8d460a44a4a573e2dafc4f5091d7b6deb5718faa0ec52ab8dca",
+		"Homework/Homework 12/level1v3.sol": {
+			"keccak256": "0xfe16e4ec1a16fb11466e5fd0cba0fecd40ef3e7ca5fd2cfdfba8db73c6debd32",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://b0ab31d2d4923702e562dee38d19a3743030ac0f9eeae365eb7fa1da1bf53300",
-				"dweb:/ipfs/Qme3qksamWpSTuT9oq9gwHCsXPeYo8W2YXN45sbfuiyjxr"
+				"bzz-raw://034c8d3f8ade12d57e9fd59323fb102130c970f97e61225b48c81397f2376a09",
+				"dweb:/ipfs/QmUWXZq8NhGoAxiTkPExmqrwfTvN56EkueZBYgj9m74XSF"
 			]
 		}
 	},
